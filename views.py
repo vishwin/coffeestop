@@ -17,5 +17,6 @@ def upload():
 		if file and allowed_file(file.filename):
 			session['gpxfile']=file.read()
 			return 'GPX successfully uploaded. More to come'
-	else:
+		else:
+			flash('Improper file or file is larger than 1&nbsp;MiB.')
 		return render_template('upload.html')
