@@ -1,7 +1,6 @@
-.nav{
+ .nav{
     font-family: "Helvetica Neue";
     color: #444;
- 
     line-height:30px;
     height: 100%;    
     width:30%;
@@ -20,10 +19,11 @@
 
 .navcontents{
    padding: 15px; 
+   overflow: auto;
+   height: 300px;
 }
 
 .navtotalcost{
-    text-size: 2em;
     text-align: center;
 }
 
@@ -35,7 +35,15 @@
 
 .tobottom{
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
+    left: 0;
+    right: 0
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.donebutton{
+    position: absolute;
     left:0;
     right:0;   
     margin-left: auto;
@@ -50,6 +58,6 @@
     border-radius: 10;
 }
 
-.tobottom:hover {
+.donebutton:hover {
     color: brown;
 }
