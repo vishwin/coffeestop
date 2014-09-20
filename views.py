@@ -1,6 +1,6 @@
 #!/usr/bin/python2.7
 from coffeestop import app
-from flask import request, redirect, render_template, session
+from flask import request, redirect, render_template, session, flash
 
 @app.route('/')
 def herro():
