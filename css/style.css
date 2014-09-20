@@ -4,13 +4,29 @@
 
 .logo {
 	margin-top: 30px;
-	margin-top: 30px;
+	margin-bottom: 30px;
 
 	text-align: center;
 	font-family: "Helvetica Neue";
 	font-size: 4em;
-	font-weight: 100;
+	font-weight: 200;
 	color: brown;
+}
+
+.desc {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	position: relative;
+	margin-left: 8%;
+	margin-right: 8%;
+	text-align: center;
+	font-family: "Helvetica Neue";
+	font-size: 2em;
+	font-weight: 100;
+}
+
+.actioncontainer {
+	background-color: #DDD;
 }
 
 .upload {
@@ -18,8 +34,8 @@
 }
 
 .go {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 0px;
+	margin-bottom: 15px;
 
 	text-align: center;
     margin-left: auto;
@@ -27,17 +43,20 @@
     font-size: 3em;
     font-weight: 200;
     font-family: "Helvetica Neue";
+    background-color: #fff;
     color: #444;
 
     border: 3px solid;
     width: 300px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 15;
+    border-radius: 10px;
 }
 
 .go:hover {
-    color: brown;
+    color: white;
+    background-color: brown;
+    border-color: brown;
 }
 
 a, visited {
@@ -48,20 +67,35 @@ a, visited {
 	float: left;
 	width: 33.3333333333%;
 	text-align: center;
+	margin-bottom: 50px;
+	min-width: 200px;
 }
 
 .tricontainer {
-	margin: 100 0 50 0;
+}
+
+.uploadicon {
+	margin: 30px 0px 30px 0px;
+	width: 200px;
+	border: 2px solid;
+	border-radius: 15px;
+	border-color: black;
+	padding: 10px;
+	background-color: white;
+}
+
+.uploadicon:hover {
+	background-color: #DDF;
 }
 
 .bikeicon {
-       width: 170px;
+    width: 170px;
 }
 
 .coffeeicon {
-         width: 140px;
+    width: 140px;
 }
 
 .mapicon {
-         width: 160px;
+    width: 160px;
 }

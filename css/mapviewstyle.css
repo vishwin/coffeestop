@@ -1,0 +1,81 @@
+body{
+    font-family: "Helvetica Neue";
+
+}
+
+.nav{
+    color: #444;
+    line-height: 30px;
+    width: 30%;
+    float: right;
+    position: relative;
+    border-left: 1px dashed black;
+    border-bottom: 1px dashed black;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 5px;
+}
+
+.navheader{
+    font-weight: 100;
+    background-color: #eeeeee;
+    text-align: center;
+    font-size: 2em;
+    height: 90px;
+    line-height: 90px;
+    color: brown;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.navcontents{
+    padding: 15px;
+    padding-top: 0px;
+    overflow: auto;
+    height: 70%;
+}
+
+.navtotalcost{
+    text-align: center;
+}
+
+.section {
+    width:600px;
+    float:left;
+    padding:10px; 
+}
+
+.tobottom{
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    height: 80px;
+}
+
+.donebutton{
+    position: absolute;
+    left:0;
+    right:0;   
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 200;
+    border: 3px solid;
+    width: 80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10;
+}
+
+.donebutton:hover {
+    color: white;
+    background-color: brown;
+    border-color: brown;
+}
+
+#map {
+    width:500px;
+    height:500px;
+}
