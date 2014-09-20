@@ -1,0 +1,41 @@
+.container {
+	background-color: white;
+}
+
+.logo {
+	margin-top: 30px;
+	margin-top: 30px;
+
+	text-align: center;
+	font-family: "Helvetica Neue";
+	font-size: 3em;
+	font-weight: 100;
+}
+
+.upload {
+	text-align: center;
+}
+
+.go {
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+    text-align: center;
+    font-size: 3em;
+    font-weight: 200;
+    font-family: "Helvetica Neue";
+    color: gray;
+
+    border: 3px solid;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.go:hover {
+    color: #297ACC;
+}
+
+a, visited {
+    text-decoration: none;
+}
