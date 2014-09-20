@@ -37,7 +37,7 @@
 }
 
 .go:hover {
-    color: #666;
+    color: brown;
 }
 
 a, visited {
@@ -55,13 +55,13 @@ a, visited {
 }
 
 .bikeicon {
-       width: 200px;
+       width: 170px;
 }
 
 .coffeeicon {
-         width: 160px;
+         width: 140px;
 }
 
 .mapicon {
-         width: 190px;
-}>>>>>>> c8c6dca15e7a742ccf380fc5f086e1345241abfc
+         width: 160px;
+}
