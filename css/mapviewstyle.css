@@ -20,7 +20,7 @@
 .navcontents{
    padding: 15px; 
    overflow: auto;
-   height: 500px;
+   height: 70%;
 }
 
 .navtotalcost{
@@ -34,12 +34,12 @@
 }
 
 .tobottom{
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0
-    margin-left: auto;
-    margin-right: auto;
+    position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    height: 20%;
 }
 
 .donebutton{
