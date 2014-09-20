@@ -1,0 +1,49 @@
+.nav{
+    font-family: "Helvetica Neue";
+    color: #444;
+ 
+    line-height:30px;
+    height: 100%;    
+    width:30%;
+    float:right;
+    position: relative;
+    border-left: 1px solid black;
+}
+.navheader{
+    background-color:#eeeeee;
+    height: 10%;
+    text-align: center;
+    font-size: 2em;
+    height: 90px;
+      line-height: 90px;
+}
+
+.navcontents{
+   padding: 5px; 
+}    
+.section {
+    width:500px;
+    float:left;
+    padding:10px; 
+}
+
+.tobottom{
+    position: absolute;
+    bottom: 10px;
+    left:0;
+    right:0;   
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 200;
+    border: 3px solid;
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10;
+}
+
+.tobottom:hover {
+    color: brown;
+}
