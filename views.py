@@ -1,15 +1,12 @@
 #!/usr/bin/python2.7
 from coffeestop import app
-from flask import request, redirect, url_for, render_template
-from werkzeug import secure_filename
-import tempfile, os
+from flask import request, redirect, render_template, session
 
 @app.route('/')
 def herro():
 	return 'Coffeestop is coming soon.'
 
 from config import ALLOWED_EXTENSIONS
-app.config['UPLOAD_FOLDER']=tempfile.gettempdir()
 def allowed_file(filename):
 	return '.' in filename and filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
 
@@ -18,6 +15,7 @@ def upload():
 	if request.method=='POST':
 		file=request.files['gpxupload']
 		if file and allowed_file(file.filename):
-			return file.read()
+			session['gpxfile']=file.read()
+			return 'GPX successfully uploaded. More to come'
 	else:
 		return render_template('upload.html')
