@@ -37,7 +37,7 @@
 }
 
 .go:hover {
-    color: brown;
+    color: #666;
 }
 
 a, visited {
@@ -84,15 +84,4 @@ a, visited {
 .tricontainer {
 	margin: 100 0 50 0;
 }
-
-.bikeicon {
-	width: 200px;
-}
-
-.coffeeicon {
-	width: 160px;
-}
-
-.mapicon {
-	width: 190px;
-}>>>>>>> c8c6dca15e7a742ccf380fc5f086e1345241abfc
+>>>>>>> c8c6dca15e7a742ccf380fc5f086e1345241abfc
