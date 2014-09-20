@@ -19,8 +19,14 @@
 }
 
 .navcontents{
-   padding: 5px; 
-}    
+   padding: 15px; 
+}
+
+.navtotalcost{
+    text-size: 2em;
+    text-align: center;
+}
+
 .section {
     width:500px;
     float:left;
@@ -38,7 +44,7 @@
     font-size: 1em;
     font-weight: 200;
     border: 3px solid;
-    width: 300px;
+    width: 400px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 10;
