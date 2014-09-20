@@ -4,7 +4,7 @@
 
 .logo {
 	margin-top: 30px;
-	margin-top: 30px;
+	margin-bottom: 30px;
 
 	text-align: center;
 	font-family: "Helvetica Neue";
@@ -14,14 +14,19 @@
 }
 
 .desc {
-	margin-top: 200px;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	position: relative;
+	margin-left: 8%;
+	margin-right: 8%;
 	text-align: center;
 	font-family: "Helvetica Neue";
 	font-size: 2em;
 	font-weight: 100;
+}
+
+.actioncontainer {
+	background-color: #DDD;
 }
 
 .upload {
@@ -29,8 +34,8 @@
 }
 
 .go {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 5px;
+	margin-bottom: 25px;
 
 	text-align: center;
     margin-left: auto;
@@ -38,13 +43,14 @@
     font-size: 3em;
     font-weight: 200;
     font-family: "Helvetica Neue";
+    background-color: #fff;
     color: #444;
 
     border: 3px solid;
     width: 300px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 15;
+    border-radius: 10px;
 }
 
 .go:hover {
@@ -63,7 +69,10 @@ a, visited {
 }
 
 .tricontainer {
-	margin: 100 0 50 0;
+}
+
+.uploadicon {
+	width: 200px;
 }
 
 .bikeicon {
