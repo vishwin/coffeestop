@@ -4,32 +4,33 @@ body{
 }
 
 .nav{
-    font-family: "Helvetica Neue";
     color: #444;
-    line-height:30px;
-    height: 100%;    
-    width:30%;
-    float:right;
+    line-height: 30px;
+    width: 30%;
+    float: right;
     position: relative;
-    border-left: 1px dashed black;
-
+    border-left: 1px solid black;
 }
+
 .navheader{
     font-weight: 100;
-    background-color:#eeeeee;
-    height: 10%;
+    background-color: #eeeeee;
     text-align: center;
     font-size: 2em;
     height: 90px;
     line-height: 90px;
     color: brown;
-
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 5px;
 }
 
 .navcontents{
-   padding: 15px; 
-   overflow: auto;
-   height: 70%;
+    padding: 15px;
+    padding-top: 0px;
+    overflow: auto;
+    height: 70%;
 }
 
 .navtotalcost{
@@ -43,12 +44,10 @@ body{
 }
 
 .tobottom{
-    position:absolute;
-    left:0;
-    right:0;
+    position:relative;
     margin-left:auto;
     margin-right:auto;
-    height: 20%;
+    height: 80px;
 }
 
 .donebutton{
