@@ -10,6 +10,9 @@ body{
     float: right;
     position: relative;
     border-left: 1px dashed black;
+    border-bottom: 1px dashed black;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 5px;
 }
 
 .navheader{
