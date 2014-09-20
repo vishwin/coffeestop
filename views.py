@@ -19,4 +19,4 @@ def upload():
 			return 'GPX successfully uploaded. More to come'
 		else:
 			flash('Improper file or file is larger than 1&nbsp;MiB.')
-		return render_template('upload.html')
+	return render_template('upload.html')
