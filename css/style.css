@@ -9,7 +9,7 @@
 	text-align: center;
 	font-family: "Helvetica Neue";
 	font-size: 4em;
-	font-weight: 100;
+	font-weight: 200;
 	color: brown;
 }
 
@@ -68,6 +68,7 @@ a, visited {
 	width: 33.3333333333%;
 	text-align: center;
 	margin-bottom: 50px;
+	min-width: 200px;
 }
 
 .tricontainer {
@@ -79,7 +80,7 @@ a, visited {
 	border: 2px solid;
 	border-radius: 15px;
 	border-color: black;
-	padding: 5px;
+	padding: 10px;
 	background-color: white;
 }
 
