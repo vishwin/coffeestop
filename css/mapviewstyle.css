@@ -7,14 +7,18 @@
     float:right;
     position: relative;
     border-left: 1px solid black;
+
 }
 .navheader{
+    font-weight: 100;
     background-color:#eeeeee;
     height: 10%;
     text-align: center;
     font-size: 2em;
     height: 90px;
     line-height: 90px;
+    color: brown;
+
 }
 
 .navcontents{
@@ -52,7 +56,7 @@
     font-size: 1em;
     font-weight: 200;
     border: 3px solid;
-    width: 400px;
+    width: 80%;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 10;
