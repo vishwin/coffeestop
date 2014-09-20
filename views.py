@@ -20,3 +20,9 @@ def upload():
 		else:
 			flash('Improper file or file is larger than 1&nbsp;MiB.')
 	return render_template('upload.html')
+
+@app.route('/map')
+def map():
+	mapObject=Map(gpxstring=session['gpxfile'])
+	mapJS=mapObject.genjs()
+	return render_template('mapview.html')
