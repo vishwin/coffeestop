@@ -1,6 +1,6 @@
 #!/usr/bin/python2.7
-from coffeestop import app
-from flask import request, redirect, render_template, session, flash
+from coffeestop import app, gmaps
+from flask import request, redirect, render_template, url_for, session, flash
 
 @app.route('/')
 def herro():
@@ -16,13 +16,13 @@ def upload():
 		file=request.files['gpxupload']
 		if file and allowed_file(file.filename):
 			session['gpxfile']=file.read()
-			return 'GPX successfully uploaded. More to come'
+			return redirect(url_for('map'))
 		else:
 			flash('Improper file or file is larger than 1&nbsp;MiB.')
 	return render_template('upload.html')
 
 @app.route('/map')
 def map():
-	mapObject=Map(gpxstring=session['gpxfile'])
+	mapObject=gmaps.Map(gpxstring=session['gpxfile'])
 	mapJS=mapObject.genjs()
-	return render_template('mapview.html')
+	return render_template('mapview.html', mapview=mapJS)
