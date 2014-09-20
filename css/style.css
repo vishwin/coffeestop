@@ -8,8 +8,9 @@
 
 	text-align: center;
 	font-family: "Helvetica Neue";
-	font-size: 3em;
+	font-size: 4em;
 	font-weight: 100;
+	color: brown;
 }
 
 .upload {
@@ -20,22 +21,35 @@
 	margin-top: 30px;
 	margin-bottom: 30px;
 
-    text-align: center;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 3em;
     font-weight: 200;
     font-family: "Helvetica Neue";
-    color: gray;
+    color: #444;
 
     border: 3px solid;
-
+    width: 300px;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-radius: 15;
 }
 
 .go:hover {
-    color: #297ACC;
+    color: #666;
 }
 
 a, visited {
     text-decoration: none;
+}
+
+.tri {
+	float: left;
+	width: 33.3333333333%;
+	text-align: center;
+}
+
+.tricontainer {
+	margin: 100 0 50 0;
 }
