@@ -32,6 +32,7 @@
 .upload {
 	text-align: center;
 	margin: auto;
+	display: block;
 }
 
 .go {
