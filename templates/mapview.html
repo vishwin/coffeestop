@@ -42,7 +42,7 @@
 </div>
 {% endblock %}
 {% block javascript %}
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript">{{mapview}}</script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.17"></script>
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript">{{mapview|safe}}</script>
 {% endblock %}

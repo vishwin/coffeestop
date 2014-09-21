@@ -14,6 +14,8 @@ function initialize() {
 	
 	var map=new google.maps.Map(document.getElementById('map'), mapOptions);
 	
+	var bounds=new google.maps.LatLngBounds();
+	
 	var trackCoordinates=[
 """
 		for track in self.gpx.tracks:
@@ -24,6 +26,12 @@ function initialize() {
 """.format(point.latitude, point.longitude)
 		self.js=self.js+"""\
 	];
+	
+	for (var i=0; i<trackCoordinates.length; i++) {
+		bounds.extend(trackCoordinates[i]);
+	}
+	map.fitBounds(bounds);
+	
 	var track=new google.maps.Polyline({
 		path: trackCoordinates,
 		geodesic: true,
