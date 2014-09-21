@@ -42,9 +42,9 @@ body{
 }
 
 .section {
-    width:600px;
+    width:50%;
     float:left;
-    padding:10px; 
+    padding:10px;
 }
 
 .tobottom{
