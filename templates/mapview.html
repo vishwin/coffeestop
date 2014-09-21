@@ -15,10 +15,12 @@
 		<img src="../static/images/yelp.gif" class="yelp">
 	</div>
 	<div class="navcontents"><dl>{% for place in yelp %}
-		<dt>{{ place['name'] }}</dt>
+		<a class="restaurant">
+		<dt><strong>{{ place['name'] }}</strong></dt>
 			{% for address in place['location']['display_address'] %}
 			<dd>{{ address }}</dd>
 			{% endfor %}
+		</a>
 	{% endfor %}</dl></div>
 	<div class = "tobottom">
 		<div class="navtotalcost">
