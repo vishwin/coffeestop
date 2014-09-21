@@ -6,13 +6,14 @@ body{
 .nav{
     color: #444;
     line-height: 30px;
-    width: 37%;
+    width: 40%;
     float: right;
     position: relative;
     border-left: 1px dashed black;
     border-bottom: 1px dashed black;
     padding-bottom: 15px;
     border-bottom-left-radius: 5px;
+    height: 800px;
 }
 
 .navheader{
@@ -42,6 +43,7 @@ body{
 }
 
 .section {
+    height: 800px;
     width:800px;
     float:left;
     padding:10px; 
