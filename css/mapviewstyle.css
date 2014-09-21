@@ -6,13 +6,14 @@ body{
 .nav{
     color: #444;
     line-height: 30px;
-    width: 30%;
+    width: 38%;
     float: right;
     position: relative;
     border-left: 1px dashed black;
     border-bottom: 1px dashed black;
     padding-bottom: 15px;
     border-bottom-left-radius: 5px;
+    height: 800px;
 }
 
 .navheader{
@@ -42,7 +43,8 @@ body{
 }
 
 .section {
-    width:50%;
+    height: 800px;
+    width:800px;
     float:left;
     padding:10px; 
 }
@@ -77,6 +79,8 @@ body{
 }
 
 #map {
+    width: 800px;
+    height: 800px;
 }
 
 .yelp {
