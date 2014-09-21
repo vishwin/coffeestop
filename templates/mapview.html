@@ -4,16 +4,12 @@
 {% endblock %}
 {% block body %}
 <div class="section">
-	MAP GOES HERE
 	<div id="map">
 	</div>
 </div>
 
 <div class="nav">
 	<div class="navheader">Places to stop</div>
-	<div class="yelpplug">
-		<img src="../static/images/yelp.gif" class="yelp">
-	</div>
 	<div class="navcontents"><dl>{% for place in yelp %}
 		<a class="restaurant">
 		<dt><strong>{{ place['name'] }}</strong></dt>
@@ -23,8 +19,8 @@
 		</a>
 	{% endfor %}</dl></div>
 	<div class = "tobottom">
-		<div class="navtotalcost">
-			Total Cost:
+		<div class="yelpplug">
+			<img src="../static/images/yelp.gif" class="yelp">
 		</div>
 		<div class="donebutton">Done!</div>
 	</div>
