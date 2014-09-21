@@ -1,51 +1,48 @@
-<html>
-    <head>
-        <title>MapView</title>
-        <link href="../css/mapviewstyle.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <div class = "section">
-            MAP GOES HERE
-            <div id="map">
-            </div>
-        </div>
+{% extends 'base.html' %}
+{% block head %}
+	<link href="static/css/mapviewstyle.css" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block body %}
+<div class="section">
+	MAP GOES HERE
+	<div id="map">
+	</div>
+</div>
 
-        <div class="nav">
-            <div class="navheader">Restaurants</div>
-            <div class="navcontents">
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-                Stuff<br>
-            </div>
-            <div class = "tobottom">
-                <div class="navtotalcost">
-                    Total Cost:
-                </div>
-                <div class="donebutton">Done!</div>
-            </div>
-        </div>
-
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
-        <script type="text/javascript" src="../js/jquery.min.js"></script>
-	<script type="text/javascript">{{mapview}}</script>
-        
-        
-   </body>
-</html>
+<div class="nav">
+	<div class="navheader">Restaurants</div>
+	<div class="navcontents">
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+		Stuff<br>
+	</div>
+	<div class = "tobottom">
+		<div class="navtotalcost">
+			Total Cost:
+		</div>
+		<div class="donebutton">Done!</div>
+	</div>
+</div>
+{% endblock %}
+{% block javascript %}
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript">{{mapview}}</script>
+{% endblock %}
