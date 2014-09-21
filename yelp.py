@@ -53,6 +53,6 @@ class Yelp:
 			for segment in track.segments:
 				for place in self.query(lat=segment.points[0].latitude, lon=segment.points[0].longitude)['businesses']:
 					places.append(place)
-		for k, g in itertools.groupby(places, lambda x: x['id']):
-			places=g.next()
+		#for k, g in itertools.groupby(places, lambda x: x['id']):
+		#	places=g.next()
 		return places
