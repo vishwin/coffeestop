@@ -11,6 +11,9 @@
 
 <div class="nav">
 	<div class="navheader">Places to stop</div>
+	<div class="yelpplug">
+		<img src="../static/images/yelp.gif" class="yelp">
+	</div>
 	<div class="navcontents"><dl>{% for place in yelp %}
 		<dt>{{ place['name'] }}</dt>
 			{% for address in place['location']['display_address'] %}
