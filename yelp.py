@@ -5,6 +5,7 @@ import sys
 import urllib
 import urllib2
 import oauth2
+import itertools
 from config import CONSUMER_KEY, CONSUMER_SECRET, TOKEN, TOKEN_SECRET
 
 class Yelp:
