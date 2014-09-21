@@ -82,8 +82,14 @@ body{
 }
 
 .yelp {
-    height: 15px;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.restaurant {
+    display: block;
+    border: 1px solid;
+    border-color: black;
 }
