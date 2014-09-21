@@ -40,9 +40,9 @@ class Yelp:
 		
 		connection=urllib2.urlopen(signed_url, None)
 		try:
-			response=json.loads(conn.read())
+			response=json.loads(connection.read())
 		finally:
-			conn.close()
+			connection.close()
 		
 		return response
 	
@@ -50,6 +50,8 @@ class Yelp:
 		places=[]
 		for track in self.gpx.tracks:
 			for segment in track.segments:
-				places.extend(query(lat=segment.points[0].latitude, lon=segment.points[0].longitude)['businesses'])
-		list(set(places)) # convert to set to remove any multiple entries, then back to list
+				for place in self.query(lat=segment.points[0].latitude, lon=segment.points[0].longitude)['businesses']:
+					places.append(place)
+		for k, g in itertools.groupby(places, lambda x: x['id']):
+			places=g.next()
 		return places

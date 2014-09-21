@@ -10,29 +10,13 @@
 </div>
 
 <div class="nav">
-	<div class="navheader">Restaurants</div>
-	<div class="navcontents">
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-		Stuff<br>
-	</div>
+	<div class="navheader">Places to stop</div>
+	<div class="navcontents"><dl>{% for place in yelp %}
+		<dt>{{ place['name'] }}</dt>
+			{% for address in place['location']['display_address'] %}
+			<dd>{{ address }}</dd>
+			{% endfor %}
+	{% endfor %}</dl></div>
 	<div class = "tobottom">
 		<div class="navtotalcost">
 			Total Cost:

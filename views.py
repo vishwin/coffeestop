@@ -29,4 +29,4 @@ def map():
 	mapObject=gmaps.Map(gpxstring=session['gpxfile'])
 	mapJS=mapObject.genjs()
 	
-	return render_template('mapview.html', mapview=mapJS)
+	return render_template('mapview.html', yelp=yelpObject.query_all_cleaned(), mapview=mapJS)
