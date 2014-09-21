@@ -6,7 +6,7 @@ body{
 .nav{
     color: #444;
     line-height: 30px;
-    width: 30%;
+    width: 37%;
     float: right;
     position: relative;
     border-left: 1px dashed black;
@@ -42,7 +42,7 @@ body{
 }
 
 .section {
-    width:50%;
+    width:800px;
     float:left;
     padding:10px; 
 }
