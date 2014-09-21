@@ -1,6 +1,7 @@
 #!/usr/bin/python2.7
-from coffeestop import app, gmaps
+from coffeestop import app, gmaps, yelp
 from flask import request, redirect, render_template, url_for, session, flash
+from config import CONSUMER_KEY, CONSUMER_SECRET, TOKEN, TOKEN_SECRET
 
 @app.route('/')
 def herro():
@@ -23,6 +24,9 @@ def upload():
 
 @app.route('/map')
 def map():
+	yelpObject=yelp.Yelp(consumer_key=CONSUMER_KEY, consumer_secret=CONSUMER_SECRET, token=TOKEN, token_secret=TOKEN_SECRET, gpxstring=session['gpxfile'])
+	
 	mapObject=gmaps.Map(gpxstring=session['gpxfile'])
 	mapJS=mapObject.genjs()
+	
 	return render_template('mapview.html', mapview=mapJS)
