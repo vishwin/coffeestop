@@ -34,6 +34,7 @@ body{
     padding-top: 0px;
     overflow: auto;
     height: 70%;
+    text-align: center;
 }
 
 .navtotalcost{
@@ -81,5 +82,8 @@ body{
 }
 
 .yelp {
-    height: 50px;
+    height: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
