@@ -25,9 +25,8 @@ def upload():
 @app.route('/map')
 def map():
 	yelpObject=yelp.Yelp(consumer_key=CONSUMER_KEY, consumer_secret=CONSUMER_SECRET, token=TOKEN, token_secret=TOKEN_SECRET, gpxstring=session['gpxfile'])
-	yelpPlaces=yelpObject.query_all_cleaned()
 	
 	mapObject=gmaps.Map(gpxstring=session['gpxfile'])
 	mapJS=mapObject.genjs()
 	
-	return render_template('mapview.html', yelp=yelpPlaces, mapview=mapJS)
+	return render_template('mapview.html', yelp=yelpObject.query_all_cleaned(), mapview=mapJS)
